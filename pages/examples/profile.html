@@ -343,7 +343,7 @@
             <ul class="nav nav-tabs">
               <li class="active"><a href="#activity" data-toggle="tab">Datos Generales</a></li>
               <li><a href="#timeline" data-toggle="tab">Contrato</a></li>
-              <li><a href="#settings" data-toggle="tab">Expediente</a></li>
+              <li><a href="#expediente" data-toggle="tab">Expedientes</a></li>
               <li><a href="#info" data-toggle="tab">INFO_Kabec</a></li>
               <li><a href="#asignacion" data-toggle="tab">Asignación</a></li>
             </ul>
@@ -666,7 +666,7 @@
                   <div class="form-group">
                     <label for="inputName" class="col-sm-2 control-label">Nombre del Cliente</label>
                     <div class="col-sm-10">  
-<select class="form-control select2" style="width: 50%;"/>
+<select class="form-control select2" style="width: 50%;">
                   <option selected="selected">Victor Guisa</option>
                   <option>Cesar García</option>
                   <option>Teresa Jimenez</option>
@@ -679,7 +679,7 @@
                        <div class="form-group">
                     <label for="inputName" class="col-sm-2 control-label">Consultor</label>
                     <div class="col-sm-10">  
-<select class="form-control select3" style="width: 50%;"/>
+<select class="form-control select3" style="width: 50%;">
                   <option selected="selected">Aldo Padilla</option>
                   <option>Alejandro Ruiz Fernandez</option>
                   <option>Ana Karen Gomez Mendoza</option>
@@ -711,64 +711,124 @@
 
               </div>
               
-              <!-- inicio contrato-->
-              <!-- /.tab-pane -->
-              <div class="tab-pane" id="settings">
-              <div class="box-header with-border">
-             <h3 class="box-title">Registro Expediente</h3>
-     </div>
-              <!-- Inicio Expediente -->
-          
-                <form class="form-horizontal">
-                  <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Consultor</label>
-                    <div class="col-sm-10">  
-<select class="form-control select5" style="width: 50%;"/>
-                  <option selected="selected">Aldo Padilla</option>
-                  <option>Alejandro Ruiz Fernandez</option>
-                  <option>Ana Karen Gomez Mendoza</option>
-                  <option>Arturo Beltran Marquez</option>
-                </select>
-                    </div>
-                    </div> 
-                  <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">CV</label>
+              
+              
+               <div class="tab-pane" id="expediente">
+        <div class="box-header with-border">
+        <form class="form-horizontal">
+          <h3 class="box-title">Documentación</h3>
+        </div>
+              <div class="form-group">
+          <small>Palomear las casillas si se cuenta con el documento</small>
+        </div>
+ <!-- iCheck -->
+            <div class="box-body">
+              <!-- radio -->
+               <div class="col-sm-6">
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkfoto" class="minimal-red">
+                </label>
+                <label>
+                  Fotografia Tamaño infantil
+                </label>
+              </div>
 
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="Cv" placeholder="CV">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Comprobante de estudios</label>
-
-                    <div class="col-sm-10">
-                      <textarea class="form-control" id="CompEst" placeholder="Comprobante de estudios"></textarea>
-                    </div>
-                  </div>
-                  
-                  
-                  <div class="form-group">
-                    <label for="inputCd" class="col-sm-2 control-label">Comprobante de domicilio</label>
-
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="ComprobanteDOM" placeholder="Comprobante de domicilio">
-                    </div>
-                  </div>
-                 <div class="form-group">
+              <!-- Minimal red style -->
+              <!-- radio -->
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkacta" class="minimal-red">
+                Acta de Nacimiento
+                </label>
+              </div>
+  <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkestado" class="minimal-red">
+                Estado de Cuenta Afore
+                </label>
+              </div>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkine" class="minimal-red">
+                Identificación Oficial (INE)
+                </label>
+              </div>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkdomicilio" class="minimal-red">
+                Comprobante de Docimicilio
+                </label>
+              </div>
+                            <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkinfonavit" class="minimal-red">
+                Carta de Retención Infonavit
+                </label>
+              </div>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkpenales" class="minimal-red">
+                Carta de Antecedentes no penales
+                </label>
+              </div>
+                </div>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkcedula" class="minimal-red">
+                Cédula Profesional o Comprobante de Estudios
+                </label>
+              </div>
+                <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkss" class="minimal-red">
+                Número de Seguridad Social
+                </label>
+              </div>
+                <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkcartar" class="minimal-red">
+                Carta de Recomendación
+                </label>
+              </div>
+                <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkbanco" class="minimal-red">
+                Carta de Datos Bancarios o Estado de Cuenta
+                </label>
+              </div>
+                <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkfonacot" class="minimal-red">
+                Fonacot
+                </label>
+              </div>
+                              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkpens" class="minimal-red">
+                Pensión Alimenticia 
+                </label>
+              </div>
+                              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="checkcurp" class="minimal-red">
+                Curp y RFC
+                </label>
+              </div>
+                          <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <button type="submit" class="btn btn-primary">Guardar</button>
                       <button type="submit" class="btn btn-danger">Limpiar</button>
                     </div>
                   </div>
-                </form>
-              </div>
+              <!-- Minimal red style -->
+            </div>
+                </form>                           
               <!-- /.tab-pane -->
             </div>
             <!-- /.tab-content -->
             <!-- /.Termina espediente -->
           </div>
-          <!-- /.nav-tabs-custom -->
-        </div>
         <!-- /.col -->
       </div>
       <!-- /.row -->
