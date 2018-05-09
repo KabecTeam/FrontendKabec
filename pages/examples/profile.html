@@ -342,9 +342,9 @@
           <div class="box box-primary">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#activity" data-toggle="tab">Datos Generales</a></li>
-              <li><a href="#timeline" data-toggle="tab">Contrato</a></li>
-              <li><a href="#expediente" data-toggle="tab">Expedientes</a></li>
-              <li><a href="#info" data-toggle="tab">INFO_Kabec</a></li>
+             
+              <li><a href="#expediente" data-toggle="tab">Expediente</a></li>
+              <li><a href="#info" data-toggle="tab">Información Kabec</a></li>
               <li><a href="#asignacion" data-toggle="tab">Asignación</a></li>
             </ul>
            
@@ -354,74 +354,369 @@
                 <div class="post">
                   <!-- /.user-block -->
 
-    <div class="box box-primary">
+       <div class="box box-primary">
         <div class="box-header with-border">
         <form class="form-horizontal">
-          <h3 class="box-title">Datos Persona</h3>
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-          </div>
+          <h3 class="box-title">Datos Personales</h3>
+         <div class="box-tools pull-right">
+           <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+         </div>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-               <label for="inputName" class="col-sm-2 control-label">Nombre</label>
-                      <input type="text" class="form-control" id="nombre" placeholder="Nombre" required/>
+
+                    <label for="inputName" class="col-sm-2 control-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="Nombre" tabindex="1" required/>
                         </div>
+
                         <div class="form-group">
-                      <label for="inputName" class="col-sm-2 control-label">A.Paterno</label>
-                      <input type="text" class="form-control" id="apaterno" placeholder="Apellido Paterno" required/>
+                      <label for="inputName" class="col-sm-0 control-label">Apellido Materno</label>
+                      <input type="text" class="form-control" id="amaterno" placeholder="Apellido Materno" tabindex="3" required/>
                         </div>
+
                         <div class="form-group">
-                      <label for="inputName" class="col-sm-2 control-label">A.Materno</label>
-                      <input type="text" class="form-control" id="amaterno" placeholder="Apellido Materno" required/>
+                      <label for="inputName" class="col-sm-2 control-label">RFC</label>
+                      <input type="text" class="form-control" id="fnacimiento" placeholder="Ingresa RFC" tabindex="5"/>
                         </div>
+
                         <div class="form-group">
-                      <label for="inputName" class="col-sm-2 control-label">F.Nacimiento</label>
-                      <input type="date" class="form-control" id="fnacimiento" placeholder="Fecha de Nacimiento" 
-                      required="required"/>
+                      <label for="inputName" class="col-sm-0 control-label">Numero de Seguro Social</label>
+                      <input type="text" class="form-control" id="fnacimiento" placeholder="Ingresa No Seguro Social" tabindex="7"required="required"/>
                         </div>
-                        
-                        
-                                                <div class="form-group">
-                      <label for="inputName" class="col-sm-2 control-label">T.Fijo</label>
-                      <input type="number" class="form-control" id="tfijo" placeholder="Telefono Fijo" required/>
-                        </div>                  
+
+                        <div class="form-group">
+                      <label for="inputName" class="col-sm-0 control-label">Crédito Fonacot</label>
+                      <input type="text" class="form-control" id="fnacimiento" placeholder="Ingresa Crédito Fonacot" tabindex="9" required/>
+                        </div>
+
+
+                        <div class="form-group">
+                      <label for="inputName" class="col-sm-0 control-label">Teléfono Particular</label>
+                      <input type="number" class="form-control" id="tfijo" placeholder="Teléfono Particular" tabindex="11" required/>
+                        </div>
+
+                        <div class="form-group">
+                      <label for="inputName" class="col-sm-0 control-label">Edad</label>
+                      <input type="number" class="form-control" id="tfijo" placeholder="Ingresa Edad" tabindex="13" required/>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="inputName" class="col-sm-0 control-label">Banco</label>
+                        <select class="form-control select2" style="width: 50%;" tabindex="15"/>
+                          <option selected="selected">Bancomer</option>
+                          <option>Santander</option>
+                          <option>No tengo</option>
+                        </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Pensión Alimenticia</label>
+                              <div class="form-group">
+                                   <label>Si</label>
+                                      <input type="checkbox" class="minimal-red" tabindex="17">
+                                   <label> No</label>
+                                       <input type="checkbox" class="minimal-red" tabindex="18" checked>
+                              </div>
+                        </div>
+
             </div>
             <!-- /.col -->
             <div class="col-md-6">
+
               <div class="form-group">
-               <label for="inputName" class="col-sm-2 control-label">T.Movil</label>
-                      <input type="number" class="form-control" id="tmovil" placeholder="Telefono Movil" required/>
+            <label for="inputName" class="col-sm-0 control-label">Apellido Paterno</label>
+            <input type="text" class="form-control" id="apaterno" placeholder="Apellido Paterno" tabindex="2"required/>
+              </div>
+
+              <div class="form-group">
+            <label for="inputName" class="col-sm-0 control-label">Fecha de Nacimiento</label>
+            <input type="date" class="form-control" id="fnacimiento" placeholder="Fecha de Nacimiento" tabindex="4"required="required"/>
+              </div>
+              <div class="form-group">
+            <label for="inputName" class="col-sm-2 control-label">CURP</label>
+            <input type="text" class="form-control" id="fnacimiento" placeholder="Ingresa CURP"tabindex="6" required/>
+              </div>
+
+              <div class="form-group">
+            <label for="inputName" class="col-sm-0 control-label">Crédito Infonavit</label>
+            <input type="text" class="form-control" id="fnacimiento" placeholder="Ingresa Crédito Infonavit" tabindex="8"required="required"/>
+              </div>
+
+
+
+              <div class="form-group">
+              <label for="inputName" class="col-sm-0 control-label">Correo</label>
+              <input type="email" class="form-control" id="tfijo" placeholder="Correo Electronico"tabindex="10" required/>
+              </div>
+
+              <div class="form-group">
+            <label for="inputName" class="col-sm-0 control-label">Teléfono Celular</label>
+            <input type="number" class="form-control" id="tfijo" placeholder="Teléfono Particular" tabindex="12" required/>
+              </div>
+
+
+
+                        <div class="form-group">
+                      <label for="inputName" class="col-sm-0 control-label">Estado Civil</label>
+                      <select class="form-control select2" style="width: 50%;" tabindex="14"/>
+                          <option selected="selected">Soltero</option>
+                          <option>Casado</option>
+                          <option>Viudo</option>
+                      </select>
                         </div>
-                                                <div class="form-group">
-                      <label for="inputName" class="col-sm-2 control-label">T.Empresa</label>
-                      <input type="number" class="form-control" id="tempresa" placeholder="Telefono Empresa" required/>
+
+
+
+
+                        <div class="form-group">
+                      <label for="inputName" class="col-sm-0 control-label">Clabe Interbancaria</label>
+                      <input type="text" class="form-control" id="tfijo" placeholder="Ingresa Clabe Interbancara" tabindex="16" required/>
                         </div>
-                        
-                                                                        <div class="form-group">
-                      <label for="inputName" class="col-sm-2 control-label">Ext.</label>
-                      <input type="number" class="form-control" id="ext" placeholder="Ext" required/>
-                        </div>
-                        
-                                                                        <div class="form-group">
-                      <label for="inputName" class="col-sm-2 control-label">C.Personal</label>
-                      <input type="email" class="form-control" id="mail" placeholder="E-mail" required/>
-                        </div>
-                        
-                                                                        <div class="form-group">
-                      <label for="inputName" class="col-sm-2 control-label">C.Empresa</label>
-                      <input type="email" class="form-control" id="eempresa" placeholder="E-mail Empresa" required/>
-                        </div>
+
+
+
+
+
             </div>
             <!-- /.col -->
-          </div>
-          <!-- /.row -->
         </div>
-        <!-- /.box-body -->            
-           </div> 
+          <!-- /.row -->
+    </div>
+        <!-- /.box-body -->
+</div>
+
+
+               
+
+      <div class="box box-primary">
+       <div class="box-header with-border">
+         <h3 class="box-title">Datos Familiares</h3>
+         <div class="box-tools pull-right">
+           <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+         </div>
+       </div>
+       <div class="box-body">
+         <div class="box box-primary">
+           <div class="box-header with-border">
+           </div>
+           <div class="box-body">
+             <div class="row">
+                 <div class="form-group">
+           <!-- /.box-header -->
+               <div class="box-body table-responsive no-padding">
+                 <table class="table table-hover">
+                   <tr>
+                     <th>Nombre del Familiar</th>
+                     <th>Parentesco</th>
+                     <th>Edad</th>
+                     <th>Ocupación</th>
+
+                   </tr>
+                   <tr>
+                     <td><input type="text" class="form-control" id="tfijo" placeholder="Nombre Completo"  /></td>
+                     <td><select class="form-control select2" />
+                         <option selected="selected">Padre</option>
+                         <option>Madre</option>
+                         <option>Esposa</option>
+                     </select></td>
+                     <td>  <input type="number" class="form-control" id="tfijo" placeholder="Ingresa Edad" /></td>
+                     <td><input type="text" class="form-control" id="tfijo" placeholder="Ingresa Ocupación"  required/></td>
+
+                   </tr>
+                   <tr>
+                     <td><input type="text" class="form-control" id="tfijo" placeholder="Nombre Completo"  /></td>
+                     <td><select class="form-control select2" />
+                         <option selected="selected">Padre</option>
+                         <option>Madre</option>
+                         <option>Esposa</option>
+                     </select></td>
+                     <td>  <input type="number" class="form-control" id="tfijo" placeholder="Ingresa Edad" /> </td>
+                     <td><input type="text" class="form-control" id="tfijo" placeholder="Ingresa Ocupación"  required/></td>
+
+                   </tr>
+                   <tr>
+                     <td><input type="text" class="form-control" id="tfijo" placeholder="Nombre Completo"  /></td>
+                     <td><select class="form-control select2" />
+                         <option selected="selected">Padre</option>
+                         <option>Madre</option>
+                         <option>Esposa</option>
+                     </select></td>
+                     <td>  <input type="number" class="form-control" id="tfijo" placeholder="Ingresa Edad" /> </td>
+                     <td><input type="text" class="form-control" id="tfijo" placeholder="Ingresa Ocupación"  required/></td>
+
+                   </tr>
+                   <tr>
+                     <td><input type="text" class="form-control" id="tfijo" placeholder="Nombre Completo"  /></td>
+                     <td><select class="form-control select2" />
+                         <option selected="selected">Padre</option>
+                         <option>Madre</option>
+                         <option>Esposa</option>
+                     </select></td>
+                     <td>  <input type="number" class="form-control" id="tfijo" placeholder="Ingresa Edad" /> </td>
+                     <td><input type="text" class="form-control" id="tfijo" placeholder="Ingresa Ocupación"  required/></td>
+                   </tr>
+                 </table>
+               </div>
+               <!-- /.box-body -->
+             <!-- /.box -->
+           </div>
+           </div>
+          </div>
+         </div>
+
+
+       </div>
+     </div>
+
+     <div class="box box-primary">
+      <div class="box-header with-border">
+        <h3 class="box-title">Escolaridad</h3>
+        <div class="box-tools pull-right">
+          <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+        </div>
+      </div>
+      <div class="box-body">
+        <div class="row">
+          <div class="col-md-6">
+
+            <div class="form-group">
+          <label for="inputName" class="col-sm-0 control-label">Último Grado de Estudios</label>
+          <input type="text" class="form-control" id="tfijo" placeholder="Último Grado de Estudios" required/>
+            </div>
+
+            <div class="form-group">
+          <label for="inputName" class="col-sm-0 control-label">Documento Obtenido</label>
+          <input type="text" class="form-control" id="tfijo" placeholder="Documento Obtenido por ultimo grado de estudios " required/>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+          <label for="inputName" class="col-sm-0 control-label">Escuela de Procedencia</label>
+          <input type="text" class="form-control" id="tfijo" placeholder="Ingresa Escuela"tabindex="23" required/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="box box-primary">
+     <div class="box-header with-border">
+       <h3 class="box-title">Certificaciones</h3>
+       <div class="box-tools pull-right">
+         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+       </div>
+     </div>
+     <div class="box-body">
+       <div class="row">
+         <div class="col-md-6">
+
+           <div class="form-group">
+         <label for="inputName" class="col-sm-0 control-label">Certificación</label>
+         <input type="text" class="form-control" id="tfijo" placeholder="Nombre de Certificación" required/>
+           </div>
+
+           <div class="form-group">
+         <label for="inputName" class="col-sm-0 control-label">Año</label>
+         <input type="text" class="form-control" id="tfijo" placeholder="Año de la Certificación" required/>
+           </div>
+
+           <div class="form-group">
+         <label for="inputName" class="col-sm-0 control-label">Validez</label>
+         <input type="text" class="form-control" id="tfijo" placeholder="Validez de la Certificación" required/>
+           </div>
+
+
+         </div>
+         <div class="col-md-6">
+
+           <div class="form-group">
+         <label for="inputName" class="col-sm-0 control-label">Certificación</label>
+         <input type="text" class="form-control" id="tfijo" placeholder="Nombre de Certificación" required/>
+           </div>
+
+           <div class="form-group">
+         <label for="inputName" class="col-sm-0 control-label">Año</label>
+         <input type="text" class="form-control" id="tfijo" placeholder="Año de la Certificación" required/>
+           </div>
+
+           <div class="form-group">
+         <label for="inputName" class="col-sm-0 control-label">Validez</label>
+         <input type="text" class="form-control" id="tfijo" placeholder="Validez de la Certificación" required/>
+           </div>
+
+
+         </div>
+
+
+       </div>
+
+     </div>
+
+   </div>
+
+
+
+         <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">Referencias Personales</h3>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <div class="box box-primary">
+              <div class="box-header with-border">
+              </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="form-group">
+              <!-- /.box-header -->
+                  <div class="box-body table-responsive no-padding">
+                    <table class="table table-hover">
+                      <tr>
+                        <th>Nombre Completo</th>
+                        <th>Tiempo de Conocerse</th>
+                        <th>Teléfono</th>
+                      </tr>
+                      <tr>
+                        <td><input type="text" class="form-control" id="nombrec" placeholder="Nombre Completo"  /></td>
+                        <td>  <input type="number" class="form-control" id="tfijo" placeholder="Ingresa Tiempo de Conocerse" /></td>
+                        <td><input type="text" class="form-control" id="tfijo" placeholder="Ingresa Teléfono"  required/></td>
+
+                      </tr>
+                      <tr>
+                        <td><input type="text" class="form-control" id="tfijo" placeholder="Nombre Completo"  /></td>
+                        <td>  <input type="number" class="form-control" id="tfijo" placeholder="Ingresa Tiempo de Conocerse" /> </td>
+                        <td><input type="text" class="form-control" id="tfijo" placeholder="Ingresa Teléfono"  required/></td>
+
+                      </tr>
+                      <tr>
+                        <td><input type="text" class="form-control" id="tfijo" placeholder="Nombre Completo"  /></td>
+                        <td>  <input type="number" class="form-control" id="tfijo" placeholder="Ingresa Tiempo de Conocerse" /> </td>
+                        <td><input type="text" class="form-control" id="tfijo" placeholder="Ingresa Teléfono"  required/></td>
+
+                      </tr>
+
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                <!-- /.box -->
+              </div>
+              </div>
+             </div>
+            </div>
+
+          
+          </div>
+        </div>
+
+
             
                   
                         <!-- SELECT2 EXAMPLE -->
@@ -496,230 +791,151 @@
                 <div class="post">
                 </div>
               
-                       <div class="tab-pane" id="timeline">     
-        <div class="box-header with-border">
-             <h3 class="box-title">Registro Contrato</h3>
-     </div>
-
-             <form class="form-horizontal">    
-                    <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Nombre del Contrato</label>
-                    <div class="col-sm-10">  
-<select class="form-control select2" style="width: 50%;"/>
-                  <option selected="selected">Pymes</option>
-                  <option>Maat</option>
-                  <option>INMEN</option>
-                  <option>Seguro</option>
-                </select>
-                    </div>
-                    </div> 
-                    
-                    <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Fecha de inicio</label>
-                    <div class="col-sm-10">
-                      <input type="date" class="form-control" id="inputFechIC" placeholder="Fecha de inicio" 
-                      style="width:50%;"  required="required"/>
-                    </div>
-                    </div> 
-                    
-                    <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Fecha de termino</label>
-                    <div class="col-sm-10">
-                      <input type="date" class="form-control" id="inputFechTC" placeholder="Fecha de termino" 
-                      style="width: 50%;" required/>
-                    </div>
-                    </div> 
-                    
-                    <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Sueldo</label>
-                    <div class="col-sm-10">
-                      <input type="number" class="form-control" id="inputSueldo" 
-                      placeholder="Sueldo" style="width: 50%;" required/>
-                    </div>
-                    </div> 
-      
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-primary">Guardar</button>
-                      <button type="submit" class="btn btn-danger">Limpiar</button>
-                    </div>
-                  </div>
-                </form>
-
-              </div>
-              
+                      
                <!-- inicio datos kabec-->
-                <div class="tab-pane" id="info">
+               <div class="tab-pane" id="info">
                    <div class="box-header with-border">
-             <h3 class="box-title">Registro Contrato</h3>
+             <h3 class="box-title">Registro Datos Kabec</h3>
      </div>
-             <form class="form-horizontal">
+     
+   <div class="box-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+               <label for="inputName" class="ccol-sm-0">Número de requerimiento</label>
+                      <input type="text" class="form-control" id="nreq" placeholder="Número de requerimiento" required/>
+                        </div>
+                        <div class="form-group">
+                      <label for="inputName" class="col-sm-0">Número de póliza</label>
+                      <input type="text" class="form-control" id="npoliza" placeholder="Número de póliza de seguro" required/>
+                        </div>
+                        
+                        
+                        <label for="inputName" class="col-sm-0">tipo de contrato</label> 
+                     <select class="form-control" />
+                         <option selected="selected">Elegir tipo de contrato</option>
+                         <option>Pymes</option>
+                         <option>Maat</option>
+                         <option>INMEN</option>
+                     </select></td>
+                        
+                        
+                        
+                        <div class="form-group">
+                      <label for="inputName" class="col-sm-0">tipo de contrato</label>
+                      <input type="text" class="form-control" id="ncont" placeholder="tipo del contrato" required/>
+                        </div>
+                        <div class="form-group">
+                      <label for="inputName" class="col-sm-0">Fecha de inicio</label>
+                      <input type="date" class="form-control" id="finicio" placeholder="Fecha de inicio" 
+                      required="required"/>
+                        </div>
+                        
+                        
+                                                <div class="form-group">
+                      
+                        </div>                  
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6">
+            
+            
+            <div class="form-group">
+               <label for="inputName" class="col-sm-2 control-label">Tarifa</label>
+                      <input type="text" class="form-control" id="tar" placeholder="Tarifa cliente" required/>
+                        </div>
+            
+            
+              <div class="form-group">
+               <label for="inputName" class="col-sm-0">Estatus consultor</label>
+                      <input type="text" class="form-control" id="econsul" placeholder="Estatus consultor" required/>
+                        </div>
+                                                <div class="form-group">
+                      <label for="inputName" class="col-sm-2 control-label">Sueldo</label>
+                      <input type="text" class="form-control" id="sueldo" placeholder="Sueldo" required/>
+                        </div>
+                        
+                                                                        <div class="form-group">
+                      <label for="inputName" class="col-sm-0">Fecha de término</label>
+                          <input type="date" class="form-control" id="fter" placeholder="fter" required/>
+                          </div>
+               
                 <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Clave Consultor</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputIdcon" placeholder="Clave Consultor">
-                    </div>
-                    </div>      
-                    <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Tarifa Cliente</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputTarifa" placeholder="Tarifa Cliente">
-                    </div>
-                    </div> 
-                    
-                    <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">RFC</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputRFC" placeholder="RFC">
-                    </div>
-                    </div> 
-                    
-                    <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Numero de Seguridad Social</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputSeg" placeholder="Numero de Seguridad Social">
-                    </div>
-                    </div>              
-                    <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Nombre del Banco</label>
-                    <div class="col-sm-10">  
-<select class="form-control select2" style="width: 50%;"/>
-                  <option selected="selected">Banorte</option>
-                  <option>Bancomer</option>
-                  <option>Banamex</option>
-                  <option>Santander</option>
-                </select>
-                    </div>
-                    </div> 
-       <div class="form-group">
-                    <label for="inputNC" class="col-sm-2 control-label">Numero de Cuenta</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputCuenta" placeholder="Numero de Cuenta">
-                    </div>
-                    </div> 
-      
-       <div class="form-group">
-                    <label for="inputClabe" class="col-sm-2 control-label">Clabe Interbancaria</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputClabe" placeholder="Clabe Interbancaria">
-                    </div>
-                    </div> 
-                    
-                    
-                  <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Estado Civil</label>
-                    <div class="col-sm-10">  
-<select class="form-control select2" style="width: 50%;"/>
-                  <option selected="selected">Soltero</option>
-                  <option>Casado</option>
-                  <option>Unioc Libre</option>
-                </select>
-                    </div>
-                    </div> 
-                    
-                     <div class="form-group">
-                    <label for="inputPV" class="col-sm-2 control-label">Numero Poliza Seguro de Vida</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputPV" placeholder="Numero Poliza Seguro de Vida">
-                    </div>
-                    </div>
-      
-      
-                     <div class="form-group">
-                    <label for="Id nivel de estudios" class="col-sm-2 control-label">Nivel de Estudios</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputNE" placeholder="Nivel de Estudios">
-                    </div>
-                    </div>
-      
-      <div class="form-group">
-                    <label for="Idrequerimiento" class="col-sm-2 control-label">Requerimiento</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputReq" placeholder="Requerimiento">
-                    </div>
-                    </div>
-                    
-                    
-                    <div class="form-group">
-                    <label for="IdSC" class="col-sm-2 control-label">Estatus Consultor</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputSC" placeholder="Estatus Consultor">
-                    </div>
-                    </div>
-      
-                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <button type="submit" class="btn btn-primary">Guardar</button>
                       <button type="submit" class="btn btn-danger">Limpiar</button>
                     </div>
                   </div>
-                  
-                </form>
-
-              </div>
-              
-                <div class="tab-pane" id="asignacion">
-                  <div class="box-header with-border">
-             <h3 class="box-title">Registro Asignación</h3>
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.box-body -->            
+           </div>   
+           <!-- termina datos kabec-->
+           <!-- comienza asignación-->
+               
+               <!-- inicio datos asignación-->
+                <div class="tab-pane" id="asignacion"> <h3 class="box-title">Registro Asignación</h3>
+                   <div class="box-header with-border">
      </div>
-                <form class="form-horizontal">
-                  <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Nombre del Cliente</label>
-                    <div class="col-sm-10">  
-<select class="form-control select2" style="width: 50%;">
-                  <option selected="selected">Victor Guisa</option>
-                  <option>Cesar García</option>
-                  <option>Teresa Jimenez</option>
-                  <option>Jesús Ramírez</option>
-                  <option>Veronica Rosales</option>
-                </select>
-                    </div>
-                    </div> 
-                    
-                       <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Consultor</label>
-                    <div class="col-sm-10">  
-<select class="form-control select3" style="width: 50%;">
-                  <option selected="selected">Aldo Padilla</option>
-                  <option>Alejandro Ruiz Fernandez</option>
-                  <option>Ana Karen Gomez Mendoza</option>
-                  <option>Arturo Beltran Marquez</option>
-                </select>
-                    </div>
-                    </div> 
-                    <div class="form-group">
-                    <label for="inputHorario" class="col-sm-2 control-label">Horario</label>
-                    <div class="col-sm-10">
-                      <input type="date" class="form-control" id="inputHorario" placeholder="Horario">
-                    </div>
-                    </div> 
-                    
-                    <div class="form-group">
-                    <label for="inputDA" class="col-sm-2 control-label">Descripción Area</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputDA" placeholder="Descripción Area">
-                    </div>
-                    </div> 
-      
-                 <div class="form-group">
+     
+   <div class="box-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+               <label for="inputName" class="col-sm-2 control-label">Cliente</label>
+                      <input type="text" class="form-control" id="cliente" placeholder="Nombre cliente" required/>
+                        </div>
+                        <div class="form-group">
+                      <label for="inputName" class="col-sm-2 control-label">Horario</label>
+                    <input type="text" class="form-control" id="horario" placeholder="Horario" required/>
+                        </div>
+                        <div class="form-group">
+                      <label for="inputName" class="col-sm-2 control-label">Anexo</label>
+                   <input type="text" class="form-control" id="anexo"  placeholder="anexo" required/>
+                              </div>    
+                              </div>    
+                              <div class="col-md-6">
+            <div class="form-group">
+               <label for="inputName" class="col-sm-2 control-label">Area</label>
+                      <input type="text" class="form-control" id="Area" placeholder="Area asignación" required/>
+                        </div>
+            
+            <div class="form-group">
+               <label for="inputName" class="col-sm-2 control-label">Lider</label>
+                      <input type="text" class="form-control" id="Lider" placeholder="Lider" required/>
+                        </div>
+            
+            
+              <div class="form-group">
+               <label for="inputName" class="col-sm-2 control-label">Manager</label>
+                      <input type="text" class="form-control" id="Manager" placeholder="Manager" required/>
+                        </div>           
+                                                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <button type="submit" class="btn btn-primary">Guardar</button>
                       <button type="submit" class="btn btn-danger">Limpiar</button>
-                    </div>
-                  </div>
+                      
+                        </div>                  
+          
+            </div>
+            </div>
+            </div>
                 </form>
 
               </div>
               
               
-              
+              </div>
                <div class="tab-pane" id="expediente">
         <div class="box-header with-border">
         <form class="form-horizontal">
           <h3 class="box-title">Documentación</h3>
         </div>
               <div class="form-group">
-          <small>Palomear las casillas que cuenten con el documento</small>
+          <small>Documentos entregados</small>
         </div>
  <!-- iCheck -->
             <div class="box-body">
@@ -730,7 +946,7 @@
                   <input type="checkbox" name="checkfoto" class="minimal-red">
                 </label>
                 <label>
-                  Fotografia Tamaño infantil
+                  Fotografía Tamaño infantil
                 </label>
               </div>
 
@@ -817,8 +1033,8 @@
               </div>
                           <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-primary">Guardar</button>
-                      <button type="submit" class="btn btn-danger">Limpiar</button>
+                      <button type="submit" class="btn btn-primary" style="right:auto">Guardar</button>
+                      <button type="submit" class="btn btn-danger" style="right:auto">Limpiar</button>
                     </div>
                   </div>
               <!-- Minimal red style -->
